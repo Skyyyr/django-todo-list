@@ -1,0 +1,52 @@
+[
+{
+  "model": "to_do_app.to_do",
+  "pk": 1,
+  "fields": {
+    "name": "My new todo item",
+    "created_at": "13:35:53",
+    "completed_at": "17:52:04.081",
+    "to_do_list": 1
+  }
+},
+{
+  "model": "to_do_app.to_do",
+  "pk": 2,
+  "fields": {
+    "name": "a new item",
+    "created_at": "14:14:53.542",
+    "completed_at": "15:01:48.032",
+    "to_do_list": 1
+  }
+},
+{
+  "model": "to_do_app.to_do",
+  "pk": 3,
+  "fields": {
+    "name": "new item from react",
+    "created_at": "14:44:55.307",
+    "completed_at": null,
+    "to_do_list": 2
+  }
+},
+{
+  "model": "to_do_app.to_do",
+  "pk": 4,
+  "fields": {
+    "name": "hello",
+    "created_at": "17:54:47.845",
+    "completed_at": null,
+    "to_do_list": 2
+  }
+},
+{
+  "model": "to_do_app.to_do",
+  "pk": 5,
+  "fields": {
+    "name": "goodbye",
+    "created_at": "17:54:47.845",
+    "completed_at": "17:56:43.571",
+    "to_do_list": 2
+  }
+}
+]

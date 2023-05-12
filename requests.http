@@ -1,0 +1,44 @@
+### Create a new todo list
+POST http://localhost:8080/lists
+Content-Type: application/json
+
+{ "name": "My new todo list" }
+
+#### returns a 201 with the representation of the created list
+
+### Fetch a todo list
+GET http://localhost:8080/lists/{{id}}
+Accept: application/json
+
+#### returns a 200 with the representation of the list
+#### returns a 404 if the list does not exist
+
+### Fetch all todo lists
+GET http://localhost:8080/lists
+Accept: application/json
+
+#### returns a 200 with the array of list representations
+#### returns a 200 with an empty array if there are no lists
+
+### Create a new todo for existing list
+POST http://localhost:8080/lists/{{list-id}}/todos
+Content-Type: application/json
+
+{ "name": "My new todo item" }
+
+#### returns a 201 with the representation of the created list
+
+### Fetch a todo of existing list
+GET http://localhost:8080/lists/{{list-id}}/todos/{{id}}
+Accept: application/json
+
+#### returns a 200 with the representation of the todo
+#### returns a 404 if the todo does not exist
+#### returns a 404 if the todo found does not match the list id provided
+
+### Complete a todo of existing list
+PUT http://localhost:8080/lists/{{list-id}}/todos/{{id}}/complete
+
+#### returns a 204 with no content
+#### returns a 404 if the todo does not exist
+#### returns a 404 if the todo found does not match the list id provided

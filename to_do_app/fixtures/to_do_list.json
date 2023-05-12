@@ -1,0 +1,51 @@
+[
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 1,
+  "fields": {
+    "name": "My new todo list"
+  }
+},
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 2,
+  "fields": {
+    "name": "another list"
+  }
+},
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 3,
+  "fields": {
+    "name": "another list"
+  }
+},
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 4,
+  "fields": {
+    "name": "another list 2"
+  }
+},
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 5,
+  "fields": {
+    "name": "From react"
+  }
+},
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 6,
+  "fields": {
+    "name": "From react"
+  }
+},
+{
+  "model": "to_do_list_app.to_do_list",
+  "pk": 7,
+  "fields": {
+    "name": "From react"
+  }
+}
+]
