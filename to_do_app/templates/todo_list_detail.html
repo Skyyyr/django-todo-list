@@ -1,0 +1,11 @@
+<!-- todo_list_detail.html -->
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<h1>{{ object.name }}</h1>
+<a href="{% url 'create_new_item' pk=object.pk %}">
+    <button>
+        Create List Item
+    </button>
+</a>

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Todo Lists</title>
+</head>
+<body>
+    <h1>Todo Lists</h1>
+    <a href="{% url 'create_a_list' %}">
+        <button>
+            Create List
+        </button>
+    </a>
+
+    {% if todo_lists %}
+        {% for todo_list in todo_lists %}
+            <h2>{{ todo_list.name }}</h2>
+            <ul>
+                {% for todo in todo_list.todo_set.all %}
+                    <li>{{ todo.name }}</li>
+                {% endfor %}
+            </ul>
+            <a href="{% url 'get_a_list' pk=todo_list.pk %}">
+                <button>
+                    View List
+                </button>
+            </a>
+            <a href="{% url 'update_a_list' pk=todo_list.pk %}">
+                <button>
+                    Update List
+                </button>
+            </a>
+            <a href="{% url 'delete_a_list' pk=todo_list.pk %}">
+                <button>
+                    Delete List
+                </button>
+            </a>
+        {% endfor %}
+    {% else %}
+        <p>No lists available.</p>
+    {% endif %}
+</body>
+</html>
