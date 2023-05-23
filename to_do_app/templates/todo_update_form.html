@@ -1,0 +1,15 @@
+<!-- todo_update_form.html -->
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update</button>
+</form>
+<a href="{% url 'home' %}">
+    <button>
+        Home
+    </button>
+</a>

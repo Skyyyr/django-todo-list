@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Update List</title>
+</head>
+<body>
+    <h1>Update List</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">List Name:</label>
+        <input type="text" id="name" name="name" value="{{ object.name }}">
+        <br>
+        <button type="submit">Update</button>
+    </form>
+    <a href="{% url 'home' %}">
+        <button>
+            Home
+        </button>
+    </a>
+</body>
+</html>

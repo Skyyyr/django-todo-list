@@ -1,0 +1,9 @@
+<!-- todo_detail.html -->
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<h1>{{ object.name }}</h1>
+<p>Created at: {{ object.created_at }}</p>
+<p>Completed at: {{ object.completed_at }}</p>
+<p>List: {{ object.to_do_list }}</p>
