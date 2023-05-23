@@ -1,4 +1,5 @@
 from django.contrib import admin
-from .models import To_do
-# Register your models here.
-admin.site.register([To_do])
+from .models import ToDo, ToDoList
+
+
+admin.site.register([ToDo, ToDoList])
